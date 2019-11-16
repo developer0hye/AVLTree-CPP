@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stack>
 
 using namespace std;
 
@@ -224,28 +223,16 @@ int main()
     AVLTree avltree;
 
 
-    avltree.insert(20);
-    avltree.insert(25);
-    avltree.insert(15);
-    avltree.insert(10);
-    avltree.insert(30);
+    avltree.insert(1);
+    avltree.insert(2);
+    avltree.insert(3);
+    avltree.insert(4);
     avltree.insert(5);
-    avltree.insert(35);
-    avltree.insert(67);
-    avltree.insert(43);
-    avltree.insert(21);
-    avltree.insert(10);
-    avltree.insert(89);
-    avltree.insert(38);
-    avltree.insert(69);
-    avltree.pop(5);
-    avltree.pop(35);
-    avltree.pop(65);
-    avltree.pop(89);
-    avltree.pop(43);
-    avltree.pop(88);
-    avltree.pop(20);
-    avltree.pop(38);
+    avltree.insert(6);
+    avltree.insert(7);
+
+    avltree.pop(4);
+    avltree.pop(6);
 
   
     return 0;
