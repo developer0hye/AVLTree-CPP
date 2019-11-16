@@ -222,7 +222,6 @@ int main()
 {
     AVLTree avltree;
 
-
     avltree.insert(1);
     avltree.insert(2);
     avltree.insert(3);
@@ -233,7 +232,8 @@ int main()
 
     avltree.pop(4);
     avltree.pop(6);
-
+    avltree.pop(5);
+    avltree.pop(7);
   
     return 0;
 }
