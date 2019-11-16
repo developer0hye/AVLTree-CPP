@@ -168,7 +168,7 @@ private:
 
         if(balance_factor > 1)//L
         {
-            if(sub_tree_height(node->left_node_) > sub_tree_height(node->right_node_))//L
+            if(sub_tree_height(node->left_node_->left_node_) > sub_tree_height(node->left_node_->right_node_))//L
             {
                 return node = right_rotation(node);
             }
@@ -180,7 +180,7 @@ private:
         }
         else if(balance_factor < -1)//R
         {
-            if(sub_tree_height(node->left_node_) > sub_tree_height(node->right_node_))//L
+            if(sub_tree_height(node->right_node_->left_node_) > sub_tree_height(node->right_node_->right_node_))//L
             {
                 node->right_node_ = right_rotation(node->right_node_);
                 return node = left_rotation(node);
@@ -223,18 +223,30 @@ int main()
 {
     AVLTree avltree;
 
-    avltree.insert(1);
-    avltree.insert(2);
-    avltree.insert(3);
-    avltree.insert(4);
-    avltree.insert(5);
-    avltree.insert(6);
-    avltree.insert(7);
 
-    avltree.pop(4);
-    avltree.pop(6);
+    avltree.insert(20);
+    avltree.insert(25);
+    avltree.insert(15);
+    avltree.insert(10);
+    avltree.insert(30);
+    avltree.insert(5);
+    avltree.insert(35);
+    avltree.insert(67);
+    avltree.insert(43);
+    avltree.insert(21);
+    avltree.insert(10);
+    avltree.insert(89);
+    avltree.insert(38);
+    avltree.insert(69);
     avltree.pop(5);
-    avltree.pop(7);
+    avltree.pop(35);
+    avltree.pop(65);
+    avltree.pop(89);
+    avltree.pop(43);
+    avltree.pop(88);
+    avltree.pop(20);
+    avltree.pop(38);
+
   
     return 0;
 }
