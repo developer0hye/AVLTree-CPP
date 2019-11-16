@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -165,28 +166,28 @@ private:
         
         int balance_factor = height_L - height_R;
 
-        if(balance_factor == 2)//L
+        if(balance_factor > 1)//L
         {
-            if(key < node->left_node_->key_)//L
+            if(sub_tree_height(node->left_node_) > sub_tree_height(node->right_node_))//L
             {
-                return node=right_rotation(node);
+                return node = right_rotation(node);
             }
             else//R
             {
                 node->left_node_ = left_rotation(node->left_node_);
-                return node=right_rotation(node);
+                return node = right_rotation(node);
             }
         }
-        else if(balance_factor == -2)//R
+        else if(balance_factor < -1)//R
         {
-            if(key < node->right_node_->key_)//L
+            if(sub_tree_height(node->left_node_) > sub_tree_height(node->right_node_))//L
             {
                 node->right_node_ = right_rotation(node->right_node_);
-                return node=left_rotation(node);
+                return node = left_rotation(node);
             }
             else//R
             {
-                return node=left_rotation(node);
+                return node = left_rotation(node);
             }
         }
 
@@ -231,8 +232,9 @@ int main()
     avltree.insert(7);
 
     avltree.pop(4);
-    avltree.pop(2);
+    avltree.pop(6);
     avltree.pop(5);
+    avltree.pop(7);
   
     return 0;
 }
