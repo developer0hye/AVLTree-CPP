@@ -5,6 +5,8 @@ AVLTree 는 가장 초기에 개발된 Balanced Binary Search Tree 이다. Tree 
 
 ## Why AVLTree?
 
+AVLTree 가 나오게 된 배경과 필요성을 피부로 느끼기 위해서는 Binary Search Tree 에 대한 이해가 필요하다.
+
 
 AVLTree 의 특징은 아래와 같다
 
