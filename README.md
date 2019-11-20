@@ -1,6 +1,6 @@
 # AVLTree
 
-AVLTree 는 가장 초기에 개발된 Balanced Binary Search Tree 이다. Tree 앞에 붙은 **AVL** 은 해당 자료구조를 제안한 **A**delson-**V**elskii 와 **L**andis 의 이름을 따서 지어진 것이며, 1962 년도에 논문("An algorithm for the organization of information")을 통해 제안되었다.
+AVLTree 는 가장 초기에 개발된 Balanced Binary Search Tree 이다. Tree 앞에 붙은 **AVL** 은 해당 자료구조를 제안한 **A**delson-**V**elskii 와 **L**andis 의 이름을 따서 지어진 것이며, 1962 년에 논문("An algorithm for the organization of information")을 통해 제안되었다.
 
 
 ## Why AVLTree?
