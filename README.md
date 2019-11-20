@@ -1,6 +1,6 @@
 # AVLTree
 
-AVLTree 는 1962 년에 논문("An algorithm for the organization of information")을 통해 제안된 **Balanced Binary Serarch Tree** 로 Tree 앞에 붙은 **AVL**은 논문의 저자인 **A**delson-**V**elskii 와 **L**andis 의 이름을 따서 지어졌다.
+AVLTree 는 논문(G. M. Adel'son-Vel'skii, E. M. Landis, "An algorithm for the organization of information", 1962)을 통해 제안된 **Balanced Binary Serarch Tree** 로 Tree 앞에 붙은 **AVL**은 논문의 저자인 **A**delson-**V**elskii 와 **L**andis 의 이름을 따서 지어졌다.
 
 
 ## Why AVLTree?
